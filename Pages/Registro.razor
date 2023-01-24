@@ -1,0 +1,92 @@
+@page "/Registro"
+<html>
+   <head>
+    <style>
+        .frame {
+    width: 50%;
+  display: flex;
+  flex-direction: column;
+  border: 2px solid #ccc;
+  margin: 20px;
+}
+
+.header {
+ background-color: #f1f1f1;
+  padding: 20px;
+  text-align: center;
+  border: 2px solid #ccc;
+}
+
+.body {
+  flex-grow: 1;
+  padding: 20px;
+  text-align: center;
+}
+
+.footer {
+  background-color: #f1f1f1;
+  padding: 20px;
+  text-align: center;
+   border: 2px solid #ccc ;
+}
+
+
+    </style>
+
+   </head>
+
+<div class="frame">
+
+  <div class="header">
+  <h2>Registro de ocupaciones</h2>
+  </div>
+
+
+
+
+
+  <div class="body">
+
+<form>
+
+<label for="OcupacionId">OcupacionId</label><br>
+  <input type="num" id="OcupacionId" name="OcupacionId">
+
+  <button name="btnSearch" id="btnSearch" class="btn btn-secondary">
+    <span class="fas fa-search"></span> Buscar
+</button>
+
+  
+  <br>
+
+  <label for="Descripcion">Descripcion</label><br>
+  <input type="text" id="Descripcion" name="Descripcion"><br>
+
+ <br>
+ <br>
+
+  <label for="Salario">Salario</label><br>
+  <input type="text" id="Salario" name="Salario"><br>
+
+ <br>
+
+
+</form>
+  </div>
+
+  <div class="footer">
+<button name="btnNuevo" id="btnNuevo" class="btn btn-primary">
+<span class="oi pi-plus"></span> Nuevo
+</button>
+
+<button name="btnguardar" id="btnguardar" class="btn btn-success">
+<span class="oi pi-Download"></span> Guardar
+</button>
+<button name="btnCancel" id="btnCancel" class="btn btn-danger">
+    <span class="oi pi-close"></span> Cancelar
+
+</button>
+  </div>
+</div>
+
+</html>
